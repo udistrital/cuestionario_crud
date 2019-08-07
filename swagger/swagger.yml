@@ -48,8 +48,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.TipoMetadatoPregunta'
-        "403":
-          description: ""
+        "404":
+          description: not found resource
     post:
       tags:
       - tipo_metadato_pregunta
@@ -65,8 +65,8 @@ paths:
       responses:
         "201":
           description: '{int} models.TipoMetadatoPregunta'
-        "403":
-          description: body is empty
+        "400":
+          description: the request contains incorrect syntax
   /tipo_metadato_pregunta/{id}:
     get:
       tags:
@@ -84,8 +84,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.TipoMetadatoPregunta'
-        "403":
-          description: :id is empty
+        "404":
+          description: not found resource
     put:
       tags:
       - tipo_metadato_pregunta
@@ -108,8 +108,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.TipoMetadatoPregunta'
-        "403":
-          description: :id is not int
+        "400":
+          description: the request contains incorrect syntax
     delete:
       tags:
       - tipo_metadato_pregunta
@@ -124,8 +124,8 @@ paths:
       responses:
         "200":
           description: '{string} delete success!'
-        "403":
-          description: id is empty
+        "404":
+          description: not found resource
   /valor_metadato/:
     get:
       tags:
@@ -163,8 +163,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.ValorMetadato'
-        "403":
-          description: ""
+        "404":
+          description: not found resource
     post:
       tags:
       - valor_metadato
@@ -180,8 +180,8 @@ paths:
       responses:
         "201":
           description: '{int} models.ValorMetadato'
-        "403":
-          description: body is empty
+        "400":
+          description: the request contains incorrect syntax
   /valor_metadato/{id}:
     get:
       tags:
@@ -199,8 +199,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.ValorMetadato'
-        "403":
-          description: :id is empty
+        "404":
+          description: not found resource
     put:
       tags:
       - valor_metadato
@@ -223,8 +223,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.ValorMetadato'
-        "403":
-          description: :id is not int
+        "400":
+          description: the request contains incorrect syntax
     delete:
       tags:
       - valor_metadato
@@ -239,8 +239,8 @@ paths:
       responses:
         "200":
           description: '{string} delete success!'
-        "403":
-          description: id is empty
+        "404":
+          description: not found resource
 definitions:
   models.TipoMetadatoPregunta:
     title: TipoMetadatoPregunta
