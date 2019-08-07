@@ -18,8 +18,8 @@ type TipoMetadatoPregunta struct {
 	Activo            bool      `orm:"column(activo)"`
 	NumeroOrden       float64   `orm:"column(numero_orden);null"`
 	FormDefinition    string    `orm:"column(form_definition);type(json)"`
-	FechaCreacion     time.Time `orm:"column(fecha_creacion);type(timestamp without time zone)"`
-	FechaModificacion time.Time `orm:"column(fecha_modificacion);type(timestamp without time zone)"`
+	FechaCreacion     time.Time `orm:"column(fecha_creacion);type(timestamp without time zone);null;auto_now_add"`
+	FechaModificacion time.Time `orm:"column(fecha_modificacion);type(timestamp without time zone);null;auto_now"`
 }
 
 func (t *TipoMetadatoPregunta) TableName() string {

@@ -15,8 +15,8 @@ type ValorMetadato struct {
 	PersonaId              int                   `orm:"column(persona_id)"`
 	Valor                  string                `orm:"column(valor)"`
 	Activo                 bool                  `orm:"column(activo)"`
-	FechaCreacion          time.Time             `orm:"column(fecha_creacion);type(timestamp without time zone)"`
-	FechaModificacion      time.Time             `orm:"column(fecha_modificacion);type(timestamp without time zone)"`
+	FechaCreacion          time.Time             `orm:"column(fecha_creacion);type(timestamp without time zone);null;auto_now_add"`
+	FechaModificacion      time.Time             `orm:"column(fecha_modificacion);type(timestamp without time zone);null;auto_now"`
 	TipoMetadatoPreguntaId *TipoMetadatoPregunta `orm:"column(tipo_metadato_pregunta_id);rel(fk)"`
 }
 
