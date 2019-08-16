@@ -13,7 +13,7 @@ import (
 type ValorMetadato struct {
 	Id                     int                   `orm:"column(id);pk;auto"`
 	PersonaId              int                   `orm:"column(persona_id)"`
-	Valor                  string                `orm:"column(valor)"`
+	Valoracion             string                `orm:"column(valoracion)"`
 	Activo                 bool                  `orm:"column(activo)"`
 	FechaCreacion          time.Time             `orm:"column(fecha_creacion);type(timestamp without time zone);null;auto_now_add"`
 	FechaModificacion      time.Time             `orm:"column(fecha_modificacion);type(timestamp without time zone);null;auto_now"`

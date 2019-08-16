@@ -22,8 +22,7 @@
                 ],
                 "description": "get TipoMetadatoPregunta",
                 "operationId": "TipoMetadatoPreguntaController.Get All",
-                "parameters": [
-                    {
+                "parameters": [{
                         "in": "query",
                         "name": "query",
                         "description": "Filter. e.g. col1:v1,col2:v2 ...",
@@ -78,17 +77,15 @@
                 ],
                 "description": "create TipoMetadatoPregunta",
                 "operationId": "TipoMetadatoPreguntaController.Post",
-                "parameters": [
-                    {
-                        "in": "body",
-                        "name": "body",
-                        "description": "body for TipoMetadatoPregunta content",
-                        "required": true,
-                        "schema": {
-                            "$ref": "#/definitions/models.TipoMetadatoPregunta"
-                        }
+                "parameters": [{
+                    "in": "body",
+                    "name": "body",
+                    "description": "body for TipoMetadatoPregunta content",
+                    "required": true,
+                    "schema": {
+                        "$ref": "#/definitions/models.TipoMetadatoPregunta"
                     }
-                ],
+                }],
                 "responses": {
                     "201": {
                         "description": "{int} models.TipoMetadatoPregunta"
@@ -106,15 +103,13 @@
                 ],
                 "description": "get TipoMetadatoPregunta by id",
                 "operationId": "TipoMetadatoPreguntaController.Get One",
-                "parameters": [
-                    {
-                        "in": "path",
-                        "name": "id",
-                        "description": "The key for staticblock",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
+                "parameters": [{
+                    "in": "path",
+                    "name": "id",
+                    "description": "The key for staticblock",
+                    "required": true,
+                    "type": "string"
+                }],
                 "responses": {
                     "200": {
                         "description": "",
@@ -133,8 +128,7 @@
                 ],
                 "description": "update the TipoMetadatoPregunta",
                 "operationId": "TipoMetadatoPreguntaController.Put",
-                "parameters": [
-                    {
+                "parameters": [{
                         "in": "path",
                         "name": "id",
                         "description": "The id you want to update",
@@ -169,15 +163,13 @@
                 ],
                 "description": "delete the TipoMetadatoPregunta",
                 "operationId": "TipoMetadatoPreguntaController.Delete",
-                "parameters": [
-                    {
-                        "in": "path",
-                        "name": "id",
-                        "description": "The id you want to delete",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
+                "parameters": [{
+                    "in": "path",
+                    "name": "id",
+                    "description": "The id you want to delete",
+                    "required": true,
+                    "type": "string"
+                }],
                 "responses": {
                     "200": {
                         "description": "{string} delete success!"
@@ -195,8 +187,7 @@
                 ],
                 "description": "get ValorMetadato",
                 "operationId": "ValorMetadatoController.Get All",
-                "parameters": [
-                    {
+                "parameters": [{
                         "in": "query",
                         "name": "query",
                         "description": "Filter. e.g. col1:v1,col2:v2 ...",
@@ -251,17 +242,15 @@
                 ],
                 "description": "create ValorMetadato",
                 "operationId": "ValorMetadatoController.Post",
-                "parameters": [
-                    {
-                        "in": "body",
-                        "name": "body",
-                        "description": "body for ValorMetadato content",
-                        "required": true,
-                        "schema": {
-                            "$ref": "#/definitions/models.ValorMetadato"
-                        }
+                "parameters": [{
+                    "in": "body",
+                    "name": "body",
+                    "description": "body for ValorMetadato content",
+                    "required": true,
+                    "schema": {
+                        "$ref": "#/definitions/models.ValorMetadato"
                     }
-                ],
+                }],
                 "responses": {
                     "201": {
                         "description": "{int} models.ValorMetadato"
@@ -279,15 +268,13 @@
                 ],
                 "description": "get ValorMetadato by id",
                 "operationId": "ValorMetadatoController.Get One",
-                "parameters": [
-                    {
-                        "in": "path",
-                        "name": "id",
-                        "description": "The key for staticblock",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
+                "parameters": [{
+                    "in": "path",
+                    "name": "id",
+                    "description": "The key for staticblock",
+                    "required": true,
+                    "type": "string"
+                }],
                 "responses": {
                     "200": {
                         "description": "",
@@ -306,8 +293,7 @@
                 ],
                 "description": "update the ValorMetadato",
                 "operationId": "ValorMetadatoController.Put",
-                "parameters": [
-                    {
+                "parameters": [{
                         "in": "path",
                         "name": "id",
                         "description": "The id you want to update",
@@ -342,15 +328,13 @@
                 ],
                 "description": "delete the ValorMetadato",
                 "operationId": "ValorMetadatoController.Delete",
-                "parameters": [
-                    {
-                        "in": "path",
-                        "name": "id",
-                        "description": "The id you want to delete",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
+                "parameters": [{
+                    "in": "path",
+                    "name": "id",
+                    "description": "The id you want to delete",
+                    "required": true,
+                    "type": "string"
+                }],
                 "responses": {
                     "200": {
                         "description": "{string} delete success!"
@@ -426,14 +410,13 @@
                 "TipoMetadatoPreguntaId": {
                     "$ref": "#/definitions/models.TipoMetadatoPregunta"
                 },
-                "Valor": {
+                "Valoracion": {
                     "type": "string"
                 }
             }
         }
     },
-    "tags": [
-        {
+    "tags": [{
             "name": "tipo_metadato_pregunta",
             "description": "TipoMetadatoPreguntaController operations for TipoMetadatoPregunta\n"
         },
