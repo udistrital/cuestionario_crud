@@ -26,4 +26,4 @@ Ejemplo: API_CUESTIONARIO_HTTP_PORT=8080 CUESTIONARIO_CRUD__PGUSER=postgres CUES
 
 Como modelos de datos del Api se utilizo el siguiente 
 
-![image](https://github.com/udistrital/cuestionario_crud/blob/dev/cuestonario.png)
+![image](https://github.com/udistrital/cuestionario_crud/blob/dev/cuestonario_new.png)
